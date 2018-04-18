@@ -2,8 +2,8 @@ require 'geocoder'
 # Understands somewhere I need to be at a particular time
 class Appointment
   attr_reader :time, :title
-
-  def initialize(time, tit1e, location, geocoder = Geocoder)
+  
+  def initialize(time, title, location, geocoder = Geocoder)
     @time = time
     @title = title
     @location = location
