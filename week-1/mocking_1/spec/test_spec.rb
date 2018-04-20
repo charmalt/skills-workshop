@@ -1,12 +1,16 @@
 require 'test'
-require 'answer'
+# require 'answer'
 
 describe Test do
+
+
+  let(:answer) { double :answer, correct?: true}
+
   let(:answers) do
     [
-      Answer.new(5, 5),
-      Answer.new(7, 7),
-      Answer.new(1, 1)
+      answer,
+      answer,
+      answer
     ]
   end
 

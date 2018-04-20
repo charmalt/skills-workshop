@@ -1,9 +1,10 @@
 require 'student'
 require 'test'
-require 'feedback'
+# require 'feedback'
 
 describe Student do
   subject(:student) { Student.new }
+  let(:feedback) { double :feedback, happiness: 4 }
 
   describe '#full_name' do
     it 'returns the student first name and last name' do
@@ -19,8 +20,10 @@ describe Student do
 
   describe '#happiness' do
     it 'returns the average happiness reported' do
-      feedback_1 = Feedback.new(4, Date.today)
-      feedback_2 = Feedback.new(4, Date.today)
+      # feedback_1 = Feedback.new(4, Date.today)
+      # feedback_2 = Feedback.new(4, Date.today)
+      feedback_1 = feedback
+      feedback_2 = feedback
       student = Student.new(feedbacks: [feedback_1, feedback_2])
 
       expect(student.happiness).to eq 4
