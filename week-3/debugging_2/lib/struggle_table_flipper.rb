@@ -7,7 +7,7 @@ class StruggleTableFlipper
   end
 
   def flipped_struggle
-    "(#{ struggle }!!!)> (╯°□°）╯︵ ┻━┻"
+    "(#{ @struggle }!!!)> (╯°□°）╯︵ ┻━┻"
   end
 
   private

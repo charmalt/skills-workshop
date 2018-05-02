@@ -7,7 +7,7 @@ Capybara.app = StruggleTableFlipperApp
 
 feature "table flip a struggle" do
   scenario "submit 'Programming' as a struggle and see the table get flipped" do
-    visit("/")
+    visit("/emoji")
     fill_in :struggle, with: "Programming"
 
     click_button "Flip table"
